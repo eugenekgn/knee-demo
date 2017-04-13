@@ -5,6 +5,7 @@
   "author": "Eugene Kagan",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^1.1.3",
     "knex": "^0.12.9",
     "pg": "^6.1.5",
     "prettyjson": "^1.2.1",

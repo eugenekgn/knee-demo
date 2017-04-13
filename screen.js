@@ -1,6 +1,9 @@
+
+const chalk = require('chalk');
+
 const screen = {
   clearScreen: () => {
-    process.stdout.write('\033c')
+    process.stdout.write('\033c');
   },
   write: (data, mode) => {
 
@@ -9,6 +12,10 @@ const screen = {
       output = JSON.stringify(data, null, 4)
     }
     console.log(output);
+  },
+  error: (errorMessage) => {
+    const messageFormatter = chalk.bold.red;
+    console.log(messageFormatter(errorMessage));
   }
 }
 
